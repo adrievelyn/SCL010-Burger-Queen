@@ -7,7 +7,8 @@ class Breakfast extends React.Component {
         <div className="card mt-4">
           <div className="card-body">
             <h5>Brakfast</h5>
-            <h5>Brakfast</h5> <h5>Brakfast</h5>
+            <h5>Brakfast</h5> 
+            <h5>Brakfast</h5>
           </div>
         </div>
       </div>

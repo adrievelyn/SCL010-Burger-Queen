@@ -27,7 +27,7 @@ function App() {
             </Link>
           </a>
         </ul>
-        <hr />
+        
         <Route exact path="/" component={Menu} />
         <Route path="/kitchen" component={Kitchen} />
         <Route path="/resume" component={Resume} />

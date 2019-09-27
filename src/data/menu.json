@@ -15,7 +15,7 @@
     "Juice": [{ "name": "Juice", "value": 700 }]
   },
   "Brakfast": [{ "name": "Sandwich jamón-queso", "value": 1000 }],
-  "Main": {
+  "main": {
     "Hamburguesas": {
       "Simple": [
         { "name": "Simple Res", "value": 1500 },

@@ -7,6 +7,7 @@ import Breakfast from "../menu/Breakfast";
 import Main from "../menu/Main";
 import ResumeBill from "../events/ResumeBill";
 
+
 function Menus({ match }) {
   return (
     <Router>
@@ -31,11 +32,13 @@ function Menus({ match }) {
       </div>
 
       <Route exact path={match.path} render={() => <Breakfast />} />
-      <Route exact path={match.path} render={() => <Main />} />
+      <Route exact path={match.path} render={() => <Main/>} />
       <Route path={`${match.path}/:id`} component={Options} />
     </Router>
   );
-}
+
+
+
 
 function Options({ match }) {
   return (
@@ -49,6 +52,9 @@ function Options({ match }) {
 }
 
 export default Menus;
+
+
+
 
 // function Drinks() {
 //   const getContent = () => {
