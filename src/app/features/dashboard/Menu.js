@@ -1,77 +1,62 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
-// import NavBarGeneral from "./features/nav/NavBarGeneral";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Drinks from "../menu/Drinks";
-import Breakfast from "../menu/Breakfast";
-import Main from "../menu/Main";
-import ResumeBill from "../events/ResumeBill";
+import NavBarMenu from "../nav/NavBarMenu";
+import OrderMenu from "../events/OrderMenu";
+import App from "../../../app/layout/App.css";
 
+class Menu extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      list: [],
+      waiter: "",
+      client: "",
+      selectedApp: "menu",
+      errorMsg: "",
+      loading: false
+    };
+  }
 
-function Menus({ match }) {
-  return (
-    <Router>
-      <div>
-        <ResumeBill />
+  render() {
+    return (
+      <div className="container">
+        <div className="row">
+          <NavBarMenu
+            input
+            className="col-4"
+            type="text"
+            name="waiter"
+            placeholder="Waiter"
+          />
+          <div className="col-4">
+            <div className="container2">
+              <OrderMenu />
+            </div>
+          </div>
+        </div>
       </div>
-      <div>
-        <ul className="navbar navbar-dark bg-dark">
-          <a>
-            <Link to={`${match.url}/drinks`}>Drinks</Link>
-          </a>
-          <a>
-            <Link to={`${match.url}/breakfast`}>Breakfast</Link>
-          </a>
-          <a>
-            <Link to={`${match.url}/main`}>Main</Link>
-          </a>
-        </ul>
-      </div>
-      <div>
-        <Route exact path={match.path} render={() => <Drinks />} />
-      </div>
-
-      <Route exact path={match.path} render={() => <Breakfast />} />
-      <Route exact path={match.path} render={() => <Main/>} />
-      <Route path={`${match.path}/:id`} component={Options} />
-    </Router>
-  );
-
-
-
-
-function Options({ match }) {
-  return (
-    <div>
-      <h3>
-        {match.params.id.charAt(0).toUpperCase() +
-          match.params.id.slice(1).replace("-", " ")}
-      </h3>
-    </div>
-  );
+    );
+  }
 }
 
-export default Menus;
+export default Menu;
 
+// function Menu() {
+//   return (
 
+//               <div className="container">
+//          <div className="row">
+//  <NavBarMenu
 
+//            input className="col-4" type="text" name="waiter" placeholder="Waiter" />
 
-// function Drinks() {
-//   const getContent = () => {
-//     return (
-//       <div className="col-md-2">
-//         <div className="card mt-4">
-//           <div className="card-body">
-//             <h5>opcion 01</h5>
-//             <h5>opcion 01</h5>
-//             <h5>opcion 01</h5>
-//           </div>
+//               <div className="col-4">
+//      <div className="container2">
+//               <ResumeBill/>
+
+//            </div>
 //         </div>
 //       </div>
-//     );
-//   };
-
-//   let content = getContent();
-
-//   return <span> {content} </span>;
+//     </div>
+//   );
 // }

@@ -2,8 +2,8 @@ import React from "react";
 // import "./App.css";
 import { Menu } from "../../../data/menu.json";
 import "bootstrap/dist/css/bootstrap.css";
-// import Img from "../../img";
-class Drinks extends React.Component {
+
+class Food extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
@@ -16,38 +16,54 @@ class Drinks extends React.Component {
         <div>
           <div>
             <h6>Breakfast</h6>
-            {Menu.Coffee.map(btn => (
-              <button
-                onClick={() => this.props.add(btn.value, btn.name)}
-                className="main-button"> 
-                 <img src={btn.img}></img>
-              <div><p>{btn.name}</p></div>  
-              <div><p>${btn.value}</p></div>
-              </button>
-            ))}
-            {Menu.Juice.map(btn => (
+            <div className="line"></div>
+            {Menu.Sandwich.map(btn => (
               <button
                 onClick={() => this.props.add(btn.value, btn.name)}
                 className="main-button">
-               <img src={btn.img}></img>
+                 <img src={btn.img}></img>
               <div><p>{btn.name}</p></div>  
               <div><p>${btn.value}</p></div>
               </button>
             ))}
 
             <h6>Main</h6>
-            {Menu.Water.map(btn => (
+            <div className="line"></div>
+            <div className="burger-button">
+            {Menu.Simple_Burger.map(btn => (
               <button
                 onClick={() => this.props.add(btn.value, btn.name)}
                 className="main-button">
-                <img src={btn.img} alt="icon-water"></img>
-              <div><p>{btn.name}</p></div>  
+                <img src={btn.img}></img>
+                <div><p>{btn.name}</p></div>  
+              <div><p>${btn.value}</p></div>
+              </button>
+              ))}
+            </div>
+            <div className="burger-button">
+            {Menu.Double_Burger.map(btn => (
+              <button className="main-button">
+                <img src={btn.img}></img>
+                <div><p>{btn.name}</p></div>  
               <div><p>${btn.value}</p></div>
               </button>
             ))}
-            {Menu.Soda.map(btn => (
+            </div>
+          </div>
+          <div className="item-btn-row">
+            {Menu.Toppings.map(btn => (
               <button className="main-button">
-               <img src={btn.img} alt="icon-soda"></img>
+              <img src={btn.img}></img>
+              <div><p>{btn.name}</p></div>  
+              <div><p>${btn.value}</p></div>
+              
+              </button>
+            ))}
+          </div>
+          <div className="item-btn-row">
+            {Menu.Side_Diches.map(btn => (
+              <button className="main-button">
+              <img src={btn.img}></img>
               <div><p>{btn.name}</p></div>  
               <div><p>${btn.value}</p></div>
               </button>
@@ -58,4 +74,4 @@ class Drinks extends React.Component {
     );
   }
 }
-export default Drinks;
+export default Food;

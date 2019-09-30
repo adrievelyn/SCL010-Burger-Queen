@@ -16,3 +16,35 @@ li {
   padding: 1vh;
   display: inline;
 }
+
+.container2, .container, .row {
+display: flex;
+
+}
+
+.container{
+	margin-left: 10%;
+}
+
+.container2 {
+	margin-left: 200px;
+}
+
+.main-button{
+  outline: none;
+  background-color: white;
+  border:none;
+}
+.lead{
+  background-color: white;
+}
+
+.burger-button{
+  display: flex;
+
+}
+.line{
+  background-color: #F72C25;
+  height: 2px;
+}
+
