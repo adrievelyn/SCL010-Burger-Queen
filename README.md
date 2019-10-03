@@ -31,7 +31,7 @@ También se realiza una macro planificación, para poder definir a grandes rasgo
 
 ## Proceso Diseño de la Interfaz de Usuario
 
-###P rototipo de flujo general 
+### Prototipo de flujo general 
 
 <a href="https://ibb.co/xGnjs5m"><img src="https://i.ibb.co/VDFSNBH/05-SKETCH-FLUJO.png" alt="05-SKETCH-FLUJO" border="0"></a>
 
@@ -47,7 +47,7 @@ También se realiza una macro planificación, para poder definir a grandes rasgo
 
 <a href="https://ibb.co/N7Kbkhy"><img src="https://i.ibb.co/DLQT6XR/08-PROTO-MEDIA.png" alt="08-PROTO-MEDIA" border="0"></a>
 
-###Guía de Estilos
+### Guía de Estilos
 
 <a href="https://ibb.co/pR0BSmc"><img src="https://i.ibb.co/9V8k7M6/09-GUIA-DE-ESTILO.png" alt="09-GUIA-DE-ESTILO" border="0"></a>
 
