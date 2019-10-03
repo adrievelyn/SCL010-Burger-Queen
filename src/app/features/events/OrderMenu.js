@@ -3,14 +3,11 @@ import firebase from "../../../data/firebase";
 import "bootstrap/dist/css/bootstrap.css";
 import moment from "moment";
 import OrderList from "../events/OrderList";
-import Drinks from "../menu/Drinks";
-import Food from "../menu/Food";
+
 class OrderMenu extends React.Component {
- 
   constructor(props) {
     super(props);
     this.state = {
-
       waiter: "",
       client: "",
       list: [],
@@ -124,15 +121,8 @@ class OrderMenu extends React.Component {
   //   });
   // }
 
-
-      menu: ['menu1', 'menu2', 'menu3', 'menu4', 'menu5', 'menu6'],
-    };
-  
-
   render() {
-    const { menu } = this.state;
     return (
-
       <div className="order-menu-container">
         <div className="col-xs-12 col-md-12">
           <form onSubmit={this.addOrder} className="form-group">
@@ -209,8 +199,6 @@ class OrderMenu extends React.Component {
           </button>
         </div>
       </div>
-
-
     );
   }
 }

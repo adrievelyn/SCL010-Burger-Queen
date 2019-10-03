@@ -4,15 +4,13 @@ import Drinks from "../menu/Drinks";
 import Food from "../menu/Food";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import "react-tabs/style/react-tabs.css";
-<<<<<<< HEAD
-import OrderMenu from "../../../app/features/events/OrderMenu.js"
+import OrderMenu from "../../../app/features/events/OrderMenu.js";
 import { Col } from "reactstrap";
 
 class Menu extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
-    
   }
 
   onClickAdd(name, value) {
@@ -20,24 +18,23 @@ class Menu extends React.Component {
       name: name,
       value: value
     });
-  };
+  }
 
-onRemoveItem = i => {
+  onRemoveItem = i => {
     this.setState(state => {
       const list = state.list.filter((item, j) => i !== j);
       return {
-        list,
+        list
       };
     });
   };
 
   render() {
     return (
-
-<div className="menu-row-container">
+      <div className="menu-row-container">
         <div className="row">
           <div className="col-md-6 col-md-offset-6">
-      <Tabs className="ShowMenu">
+            <Tabs className="ShowMenu">
               <TabList className="react-tabs__tab-list">
                 <Tab className="react-tabs__tab">
                   <img
@@ -70,12 +67,8 @@ onRemoveItem = i => {
         </div>
       </div>
     );
-
   }
 }
-
-
-
 
 export default Menu;
 
@@ -87,4 +80,4 @@ export default Menu;
 <h3>Order </h3>
 <hr />
 <p>{this.state.name}</p>
-<p>{this.state.value}</p> */*/
+<p>{this.state.value}</p> */
