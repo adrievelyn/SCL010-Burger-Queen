@@ -15,7 +15,7 @@ Por último, la pantalla Resume contiene el historial de todos los pedidos, con 
 
 <a href="https://ibb.co/V2G5VdM"><img src="https://i.ibb.co/r4hNkg5/10-PROTO-ALTA-02.png" alt="10-PROTO-ALTA-02" border="0"></a>
 
-##Planificación
+## Planificación
 
 La planificación de este proyecto se llevó a cabo en Trello. A partir de un analisis del README, se logran extraer objetivos y tareas a realizar para llevar a cabo el proyecto. 
 
@@ -31,19 +31,19 @@ También se realiza una macro planificación, para poder definir a grandes rasgo
 
 ## Proceso Diseño de la Interfaz de Usuario
 
-###Prototipo de flujo general 
+###P rototipo de flujo general 
 
 <a href="https://ibb.co/xGnjs5m"><img src="https://i.ibb.co/VDFSNBH/05-SKETCH-FLUJO.png" alt="05-SKETCH-FLUJO" border="0"></a>
 
-###Mapa de flujo de la app
+### Mapa de flujo de la app
 
 <a href="https://ibb.co/wwcXq9D"><img src="https://i.ibb.co/nnPvyHh/06-FLUJO.png" alt="06-FLUJO" border="0"></a>
 
-###Prototipo de baja fidelidad
+### Prototipo de baja fidelidad
 
 <a href="https://ibb.co/9rdrP9K"><img src="https://i.ibb.co/6WqWQR9/07-PROTO-BAJA.png" alt="07-PROTO-BAJA" border="0"></a>
 
-###Prototipo de media fidelidad
+### Prototipo de media fidelidad
 
 <a href="https://ibb.co/N7Kbkhy"><img src="https://i.ibb.co/DLQT6XR/08-PROTO-MEDIA.png" alt="08-PROTO-MEDIA" border="0"></a>
 
