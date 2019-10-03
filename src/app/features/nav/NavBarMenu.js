@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import "bootstrap/dist/css/bootstrap.css";
 // import NavBarGeneral from "./features/nav/NavBarGeneral";
@@ -39,3 +40,5 @@ function NavBarMenu() {
 }
 
 export default NavBarMenu;
+=======
+>>>>>>> a7c8ae1338d43797cdbc1ab4081f8a934370a211

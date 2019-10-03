@@ -1,5 +1,6 @@
 //codigo que conecta a firebase
-import firebase from "firebase/app";
+import firebase from "firebase";
+
 
 // Your web app's Firebase configuration
 const config = {

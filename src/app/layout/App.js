@@ -1,61 +1,67 @@
-import React from "react";
-import "bootstrap/dist/css/bootstrap.css";
-import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-
-import Menu from "../features/dashboard/Menu";
+import React, { Component } from "react";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Kitchen from "../features/dashboard/Kitchen";
 import Resume from "../features/dashboard/Resume";
-import logo from "../../img/logo_burger_queen.svg";
-import menuIcon from "../../img/menu_icon.svg";
-import kitchenIcon from "../../img/kitchen_icon.svg";
-import resumeIcon from "../../img/resume_icon.svg";
+import Menu from "../features/dashboard/Menu";
+import "../../app/layout/App.css";
+import { Row } from "reactstrap";
+import { Col } from "reactstrap";
 
-
-
-function App() {
-  return (
-    <Router>
-      <nav>
-        <ul className="navbar navbar-white bg-white">
-          <div className="logo">
-            <a href="/">
-              <img src={logo} alt="BQ-logo" />
-            </a>
+class App extends Component {
+  render() {
+    return (
+      <Router>
+        <Row>
+          <Col className="logo">
+            <img
+              src={require("../../../src/img/LOGO BURGER QUEEN-04.svg")}
+              alt="logo"
+            />
+          </Col>
+          <Col></Col>
+          <Col></Col>
+          <div className="nav-link">
+            <Col>
+              <Link to={"/menu"}>
+                <div className="menu-icons">
+                  <img
+                    src={require("../../../src/img/icon-menu-yellow.svg")}
+                    alt="logo"
+                  />
+                </div>
+              </Link>
+            </Col>
+            <Col>
+              <Link to={"/kitchen"}>
+                <div className="menu-icons">
+                  <img
+                    src={require("../../../src/img/icon-kitchen-yellow.svg")}
+                    alt="logo"
+                  />
+                </div>
+              </Link>
+            </Col>
+            <Col>
+              <Link to={"/resume"}>
+                <div className="menu-icons">
+                  <img
+                    src={require("../../../src/img/icon-resume-yellow.svg")}
+                    alt="logo"
+                  />
+                </div>
+              </Link>
+            </Col>
           </div>
-          <a href="/">
-            <Link to="/" className="text-black">
-            <div>
-              <img src={menuIcon}></img>
-              <p> Menu</p>
-            </div>
-             
-            </Link>
-          </a>
-          <a href="/kitchen">
-            <Link to="/kitchen" className="text-black">
-            <div>
-              <img src={kitchenIcon}></img>
-              <p>Kitchen</p>
-            </div>
-              
-            </Link>
-          </a>
-          <a href="/resume">
-            <Link to="/resume" className="text-black">
-            <div>
-              <img src={resumeIcon}></img>
-              <p>Resume</p>
-            </div>
-              
-            </Link>
-          </a>
-        </ul>
-        <Route exact path="/" component={Menu} />
-        <Route path="/kitchen" component={Kitchen} />
-        <Route path="/resume" component={Resume} />
-      </nav>
-    </Router>
-  );
+        </Row>
+
+        <Switch>
+          <Route exact path="/menu" component={Menu} />
+          <Route path="/kitchen" component={Kitchen} />
+          <Route path="/resume" component={Resume} />
+        </Switch>
+      </Router>
+    );
+  }
 }
 
 export default App;

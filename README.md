@@ -1,6 +1,24 @@
-# Burger Queen
+<a href="https://ibb.co/Sf11nTQ"><img src="https://i.ibb.co/VwhhSyH/01-INICIO.png" alt="01-INICIO" border="0"></a>
 
-## Preámbulo
+## Descripción del Producto 
+
+Burger Queen es una interfaz diseñada para locales de comida, que permite facilitar el flujo que se lleva a cabo desde la toma de pedidos que realiza el mesero, pasando por la cocina y hasta la entrega de estos al cliente. 
+
+Esta interfaz esta diseñada para tablet. Tiene tres visualizaciones, Menú, Kitchen y Resume. La pantalla Menú contiene, por un lado, todos los productos que ofrece el local, con su imagen, descripción y precio, y por otro lado, la cuenta donde se puede ingresar el nombre, tanto del cliente como del mesero, y donde se van agregando los productos que el cliente elige, con su precio, la cantidad de cada uno y el total de la cuenta, para luego ser enviada a la cocina. También cuenta con la opción de eliminar el pedido para comenzar de nuevo. 
+
+<a href="https://ibb.co/W6KG8x1"><img src="https://i.ibb.co/7XyjMYF/09-PROTO-ALTA-01.png" alt="09-PROTO-ALTA-01" border="0"></a>
+
+
+La pantalla Kitchen está diseñada para el cocinero. En esta puede visualizar todos los pedidos, cada uno con el nombre del mesero y del cliente, la hora en la que se realizó el pedido y la lista de producto. También tiene las opciones de marcar si ya está cocinado, y en el caso de que así sea, marcar que ya se envío para que el mesero lo entregue al cliente. 
+
+Por último, la pantalla Resume contiene el historial de todos los pedidos, con toda la información y el tiempo que demoró desde que entró en cocina hasta que se derivó al mesero. 
+
+<a href="https://ibb.co/V2G5VdM"><img src="https://i.ibb.co/r4hNkg5/10-PROTO-ALTA-02.png" alt="10-PROTO-ALTA-02" border="0"></a>
+
+##Planificación
+
+La planificación de este proyecto se llevó a cabo en Trello 
+
 
 Nos acaban de enviar un correo con una solicitud para un nuevo proyecto. Hay un
 restaurante que nos ha contactado porque quieren que alguien les construya una
