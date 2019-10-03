@@ -16,6 +16,7 @@ class Drinks extends React.Component {
         <div>
           <div>
             <h6>Breakfast</h6>
+            <div className="drinks-button">
             {Menu.Coffee.map(btn => (
               <button
                 onClick={() => this.props.add(btn.value, btn.name)}
@@ -34,8 +35,9 @@ class Drinks extends React.Component {
               <div><p>${btn.value}</p></div>
               </button>
             ))}
-
+            </div>
             <h6>Main</h6>
+            <div className = "drinks-button">
             {Menu.Water.map(btn => (
               <button
                 onClick={() => this.props.add(btn.value, btn.name)}
@@ -52,6 +54,7 @@ class Drinks extends React.Component {
               <div><p>${btn.value}</p></div>
               </button>
             ))}
+            </div>
           </div>
         </div>
       </div>

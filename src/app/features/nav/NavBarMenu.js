@@ -10,17 +10,23 @@ import foodIcon from "../../../img/menu_food_icon.svg";
 function NavBarMenu() {
   return (
     <Router>
-      <div className="lead">
+      <div className="lead col-md-6">
         <ul className="navbar">
           <a href="/drinks">
             <Link to="/drinks" className="text-white">
+              <div>
               <img src={drinksIcon}></img>
+              <p>Drinks</p>
+              </div>
             </Link>
           </a>
 
           <a href="/main">
             <Link to="/main" className="text-white">
+            <div>
             <img src={foodIcon}></img>
+            <p>Food</p>
+            </div>
             </Link>
           </a>
         </ul>

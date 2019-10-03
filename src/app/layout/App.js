@@ -6,6 +6,11 @@ import Menu from "../features/dashboard/Menu";
 import Kitchen from "../features/dashboard/Kitchen";
 import Resume from "../features/dashboard/Resume";
 import logo from "../../img/logo_burger_queen.svg";
+import menuIcon from "../../img/menu_icon.svg";
+import kitchenIcon from "../../img/kitchen_icon.svg";
+import resumeIcon from "../../img/resume_icon.svg";
+
+
 
 function App() {
   return (
@@ -19,17 +24,29 @@ function App() {
           </div>
           <a href="/">
             <Link to="/" className="text-black">
-              Menu
+            <div>
+              <img src={menuIcon}></img>
+              <p> Menu</p>
+            </div>
+             
             </Link>
           </a>
           <a href="/kitchen">
             <Link to="/kitchen" className="text-black">
-              Kitchen
+            <div>
+              <img src={kitchenIcon}></img>
+              <p>Kitchen</p>
+            </div>
+              
             </Link>
           </a>
           <a href="/resume">
             <Link to="/resume" className="text-black">
-              Resume
+            <div>
+              <img src={resumeIcon}></img>
+              <p>Resume</p>
+            </div>
+              
             </Link>
           </a>
         </ul>

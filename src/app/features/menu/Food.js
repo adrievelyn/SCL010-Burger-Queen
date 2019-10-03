@@ -12,9 +12,9 @@ class Food extends React.Component {
   }
   render() {
     return (
-      <div className="col-md-8">
-        <div>
-          <div>
+      <div>
+        
+          
             <h6>Breakfast</h6>
             <div className="line"></div>
             {Menu.Sandwich.map(btn => (
@@ -22,8 +22,8 @@ class Food extends React.Component {
                 onClick={() => this.props.add(btn.value, btn.name)}
                 className="main-button">
                  <img src={btn.img}></img>
-              <div><p>{btn.name}</p></div>  
-              <div><p>${btn.value}</p></div>
+                 <div><p>{btn.name}</p></div>  
+                 <div><p>${btn.value}</p></div>
               </button>
             ))}
 
@@ -49,7 +49,8 @@ class Food extends React.Component {
               </button>
             ))}
             </div>
-          </div>
+          <h6>Toppings</h6>
+          <div className="line"></div>
           <div className="item-btn-row">
             {Menu.Toppings.map(btn => (
               <button className="main-button">
@@ -60,6 +61,8 @@ class Food extends React.Component {
               </button>
             ))}
           </div>
+          <h6>Side Diches</h6>
+          <div className="line"></div>
           <div className="item-btn-row">
             {Menu.Side_Diches.map(btn => (
               <button className="main-button">
@@ -69,7 +72,7 @@ class Food extends React.Component {
               </button>
             ))}
           </div>
-        </div>
+        
       </div>
     );
   }
